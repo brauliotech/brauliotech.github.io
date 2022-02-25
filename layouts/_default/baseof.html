@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <!-- header -->
+  {{- partial "header.html" . -}}
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  {{- partial "nav.html" -}}
+  <!-- Page Content-->
+  <div class="container-fluid p-0">
+    {{- block "main" . }}{{- end }}
+  </div>
+  <!-- Footer -->
+  {{- partial "footer.html" . -}}
+</body>
+</html>
